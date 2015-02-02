@@ -10,9 +10,12 @@
   
     <filter>
         <filter-name>portier</filter-name>
-        <filter-class>utile.portier</filter-class>
+        <filter-class>utile.FiltreEntree</filter-class>
     </filter>
 	
-  
+    <filter-mapping>
+        <filter-name>portier</filter-name>
+        <url-pattern>/site/*</url-pattern>
+    </filter-mapping>  
     
 </web-app>

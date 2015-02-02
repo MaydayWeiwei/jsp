@@ -121,7 +121,7 @@
 	<p>Attention, si vous restez inactifs pendant un certain temps ,
 		vous devrez vous reconnecter</p>
 
-
+<%-- 
 	<!--  connexion à la base de données  -->
 	<sql:setDataSource var="conn1" driver="com.mysql.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/consommation?user=root"
@@ -156,6 +156,6 @@
 		</c:forEach>
 
 
-	</table>
+	</table> --%>
 </body>
 </html>

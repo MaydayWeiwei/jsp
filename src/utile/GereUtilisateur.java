@@ -1,5 +1,4 @@
    package utile;
-   import java.util.*;
    import java.sql.*;
     public class GereUtilisateur {
     //les  3 propriétés
@@ -73,11 +72,7 @@
       }
    
        public ResultSet recherchePersonne() {
-		 System.out.println(" recherchePersonne ");
          try {
-			System.out.println(" leNom "+ leNom);
-			System.out.println(" lePrenom " + lePrenom);
-			System.out.println(" leMotPasse " + leMotPasse);
             PreparedStatement pstmt = connectionPret.prepareStatement("select id,nom, prenom, fonction from utilisateur where nom=? and prenom=? and motpasse=?");
             pstmt.setString(1, leNom);
             pstmt.setString(2, lePrenom);
