@@ -36,7 +36,7 @@
 
 	<%
 		if (finsession != null) {
-			out.println("Fin de la session");
+			out.println("Fin de la session, veuillez vous identifer");
 		}
 	%>
 

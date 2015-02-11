@@ -75,7 +75,6 @@
 					try {
 						pstmt = conn3
 								.prepareStatement("update tableau set lieu=?,consommable=?,annee=?,mois=?,compteur=?  where id=?");
-						System.out.println(compteur);
 						pstmt.setString(1, lieu);
 						pstmt.setString(2, consommable);
 						pstmt.setInt(3, annee);
